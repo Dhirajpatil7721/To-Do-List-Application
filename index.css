@@ -1,0 +1,123 @@
+body {
+    /* background-color: linear-gradient(150deg, blue, orange); */
+    background-color: rgba(31, 80, 64, 0.527);
+}
+
+.container {
+    /* background-color: aliceblue; */
+    background-color: rgba(72, 30, 110, 0.788);
+    width: 500px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 32%;
+    /* background-color: yellow; */
+}
+
+.upper {
+    display: flex;
+    /* margin-left: 4%; */
+    /* background-color: red; */
+}
+
+.ico {
+    width: 25px;
+    height: 40px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+h2 {
+    text-align: center;
+    margin-left: 4%;
+}
+
+.input {
+    width: 88%;
+    margin-left: 3%;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+
+}
+
+.input::placeholder {
+    color: gray;
+}
+
+/* .input[type="text"] {
+    text-align: center;
+    color: red
+} */
+
+#button {
+    width: 20%;
+    height: 36px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: -107px;
+    background-color: rgba(255, 62, 3, 0.781);
+    /* border: 1px solid grey; */
+}
+
+ul {
+    padding: 10px 10px 0px 40px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 10px;
+    list-style: none;
+}
+
+ul li::before {
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-position: center;
+    margin-left: -25px;
+    margin-top: 1px;
+    list-style:circle;
+
+}
+
+ul li span {
+    /* margin-left: 90%; */
+    right: 0;
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover{
+    background-color: rgba(128, 128, 128, 0.267);
+    border-radius: 50%;
+}
+
+
+.checked {
+    text-decoration: line-through;
+    color: rgb(155, 153, 153);
+}
+
+.checked::before {
+    background-image: url(/images/checked.png);
+
+}
+
+.lower {
+    padding-bottom: 20px;
+}
